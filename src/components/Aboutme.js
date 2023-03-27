@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ProfilePicture from './../assets/images/PP.jpg';
 
 const birthdatestring = '1996-09-24'
