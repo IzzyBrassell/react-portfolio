@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AboutMe } from './Aboutme'
 import { Contact } from './contact'
 import { Projects } from './projects'
@@ -72,13 +72,13 @@ new function Layout() {
        </div>
        
        
-        <Switch>
+        <Routes>
         <Route><AboutMe /></Route>
         <Route path="/Aboutme"><AboutMe /></Route>
         <Route path="/Contact"><Contact /></Route>
         <Route path="/Projects"><Projects projects={projects} /></Route>
         <Route path='/Resume'><Resume /></Route>
-      </Switch>
+      </Routes>
       </div>
     )
 }
