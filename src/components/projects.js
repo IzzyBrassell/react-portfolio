@@ -1,22 +1,26 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 
+function Projects(props) {
+  const projectCards = [];
 
-new function Projects() {
+  for (let i = 0; i < props.projects.length; i++) {
+    const project = props.projects[i];
 
-    return(
-        <Card className="bg-dark text-white">
-      <Card.Img src="holder.js/100px270" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
-    )
+    projectCards.push(
+      <Card key={i} className="bg-dark text-white">
+        <Card.Img src={project.imageUrl} alt={project.title} />
+        <Card.ImgOverlay>
+          <Card.Title>{project.title}</Card.Title>
+          <Card.Text>{project.resources}</Card.Text>
+          <Card.Text>{project.description}</Card.Text>
+          <Card.Text>{project.githubURI}</Card.Text>
+        </Card.ImgOverlay>
+      </Card>
+    );
+  }
+
+  return projectCards;
 }
 
 export default Projects;
