@@ -10,7 +10,7 @@ const Contact = () => {
         <Card.Title>Contact Info</Card.Title>
         <Card.Text>Phone Number: 770-840-5210</Card.Text>
         <Card.Text>Email: Israel.Brassell@gmail.com</Card.Text>
-        <Button variant="outline-secondary" href='https://github.com/IzzyBrassell'>Github Link</Button>
+        <Button variant="outline-dark" href='https://github.com/IzzyBrassell'>Github Link</Button>
       </Card.Body>
     </Card>
   );
