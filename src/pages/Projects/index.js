@@ -10,13 +10,13 @@ const Projects = (props) => {
 
     projectCards.push(
       <Card key={i} className="bg-dark text-white">
-        <Card.Img src={project.imageUrl} alt={project.title} />
-        <Card.ImgOverlay>
+        <Card.Img variant='top' style= {{height: '200px', width: '200px'}} src={project.imageUrl} alt={project.title} />
+        <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.resources}</Card.Text>
           <Card.Text>{project.description}</Card.Text>
           <Card.Text>{project.githubURI}</Card.Text>
-        </Card.ImgOverlay>
+          </Card.Body>
       </Card>
     );
   }

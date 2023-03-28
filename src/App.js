@@ -58,7 +58,7 @@ function App() {
       <TopOfPage /> 
        
         <Routes>
-        <Route element={<AboutMe/>}/>
+        <Route path='/' element={<AboutMe/>}/>
         <Route path="/Aboutme" element={<AboutMe/>}/>
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Projects" element={<Projects projects={projects} />} />
