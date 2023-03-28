@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AboutMe } from './Aboutme';
-import { Contact } from './contact'
-import { Projects } from './projects'
-import { Resume } from './resume'
+import  AboutMe  from './AboutMe';
+import  Contact  from './Contact'
+import  Projects  from './Projects'
+import  Resume  from './Resume'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import CMS from './../assets/images/CMS.png';
