@@ -58,11 +58,11 @@ function App() {
       <TopOfPage /> 
        
         <Routes>
-        <Route><AboutMe /></Route>
-        <Route path="/Aboutme"><AboutMe /></Route>
-        <Route path="/Contact"><Contact /></Route>
-        <Route path="/Projects"><Projects projects={projects} /></Route>
-        <Route path='/Resume'><Resume /></Route>
+        <Route element={<AboutMe/>}/>
+        <Route path="/Aboutme" element={<AboutMe/>}/>
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/Projects" element={<Projects projects={projects} />} />
+        <Route path='/Resume' element={<Resume/>} />
       </Routes>
     </Router>
   );
