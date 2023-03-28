@@ -52,7 +52,7 @@ const projects = [
 ]
 
 
-new function Layout() {
+export const Layout = () => {
  
     return(
         <div>
@@ -82,5 +82,3 @@ new function Layout() {
       </div>
     )
 }
-
-export default Layout;
