@@ -9,8 +9,8 @@ const Projects = (props) => {
     const project = props.projects[i];
 
     projectCards.push(
-      <Card key={i} className="bg-dark text-white">
-        <Card.Img variant='top' style= {{height: '200px', width: '200px'}} src={project.imageUrl} alt={project.title} />
+      <Card key={i} className="bg-dark text-white" style={{display: 'flex', flexDirection: 'row'}}>
+        <Card.Img variant='top' style= {{height: '300px', width: '533px'}} src={project.imageUrl} alt={project.title} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.resources}</Card.Text>

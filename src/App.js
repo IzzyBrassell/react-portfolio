@@ -10,7 +10,7 @@ import CMS from './assets/images/CMS.png';
 import StreamersDen from './assets/images/StreamersDen.png';
 import Gamemap from './assets/images/Gamemap.png';
 import EmployeeBlog from './assets/images/EMPblog.png'
-import Header from './components/Header';
+import Portfolio from './assets/images/Portfolio.png'
 
 
 
@@ -39,15 +39,15 @@ const projects = [
      {
         title: `Employee CMS`,
         imageUrl: CMS,
-        resources: 'Node, Express, MySQL',
-        description: '',
+        resources: 'Node, Express, MySQL, inquirer',
+        description: 'Inquirer/node based CMS application that manages employees in a Mysql database',
         githubURI: 'https://github.com/IzzyBrassell/CMS', 
     },
      {
         title: `This Portfolio`,
-        imageUrl: '',
+        imageUrl: Portfolio,
         resources: 'React, Node',
-        description: '',
+        description: 'Portfolio made only using React, React-Router, and React-bootstrap',
         githubURI: 'https://github.com/IzzyBrassell/react-portfolio', 
     }
 ]
