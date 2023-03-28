@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Resume() {
+export const Resume = () => {
   return (
     <div className="container">
       <div className="row">
@@ -43,5 +43,3 @@ function Resume() {
           </div>
           </div>
   )}
-
-  export default Resume;

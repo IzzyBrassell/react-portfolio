@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Contact() {
+export const Contact = () => {
   return (
     <Card variant='secondary'>
       <Card.Body>
@@ -15,4 +15,3 @@ function Contact() {
   );
 }
 
-export default Contact;

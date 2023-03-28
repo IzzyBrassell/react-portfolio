@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
-function Projects(props) {
+export const Projects = (props) => {
   const projectCards = [];
 
   for (let i = 0; i < props.projects.length; i++) {
@@ -23,5 +23,3 @@ function Projects(props) {
 
   return projectCards;
 }
-
-export default Projects;
