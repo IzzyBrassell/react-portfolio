@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = () => {
+const TopOfPage = () => {
     return(
         <Navbar bg='secondary' expand='lg'>
             <Navbar.Brand>Izzy Brassell</Navbar.Brand>
@@ -19,4 +19,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default TopOfPage;

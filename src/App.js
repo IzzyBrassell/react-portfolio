@@ -5,7 +5,7 @@ import  AboutMe  from './pages/AboutMe';
 import  Contact  from './pages/Contact'
 import  Projects  from './pages/Projects'
 import  Resume  from './pages/Resume'
-import Header from './components/Header';
+import TopOfPage from './components/Header';
 import CMS from './assets/images/CMS.png';
 import StreamersDen from './assets/images/StreamersDen.png';
 import Gamemap from './assets/images/Gamemap.png';
@@ -55,7 +55,7 @@ const projects = [
 function App() {
   return (
     <Router>
-      <Header /> 
+      <TopOfPage /> 
        
         <Routes>
         <Route><AboutMe /></Route>
