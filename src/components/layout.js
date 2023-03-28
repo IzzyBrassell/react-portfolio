@@ -52,7 +52,7 @@ const projects = [
 ]
 
 
-export const Layout = () => {
+export default Layout = () => {
  
     return(
         <div>

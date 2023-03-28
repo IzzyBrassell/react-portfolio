@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export const Resume = () => {
+export default Resume = () => {
   return (
     <div className="container">
       <div className="row">

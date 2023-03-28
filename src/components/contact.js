@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export const Contact = () => {
+export default Contact = () => {
   return (
     <Card variant='secondary'>
       <Card.Body>

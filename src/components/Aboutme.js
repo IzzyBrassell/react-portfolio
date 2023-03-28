@@ -12,7 +12,7 @@ let agediffmonths = Date.now() - birthdate.getTime()
 let agedate = new Date(agediffmonths)
 let age = Math.abs(agedate.getUTCFullYear() - 1970)
 
-export const AboutMe = () => {
+export default AboutMe = () => {
     return(
         <Container fluid className="p-5 bg-dark text-white">
           <article className="container d-inline-flex ">
