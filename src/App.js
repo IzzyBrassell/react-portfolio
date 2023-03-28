@@ -1,13 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Layout from './components/Layout';
 
-function App(props) {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import  AboutMe  from './pages/AboutMe';
+import  Contact  from './pages/Contact'
+import  Projects  from './pages/Projects'
+import  Resume  from './pages/Resume'
+import Header from './components/Header';
+import CMS from './assets/images/CMS.png';
+import StreamersDen from './assets/images/StreamersDen.png';
+import Gamemap from './assets/images/Gamemap.png';
+import EmployeeBlog from './assets/images/EMPblog.png'
+import Header from './components/Header';
+
+
+
+const projects = [
+    {
+        title: `Streamer's Den`,
+        imageUrl: StreamersDen,
+        resources: 'HMTL, JS, CSS, Youtube Iframe API',
+        description: 'A Streamer website where they can more easily control what content their fans see',
+        githubURI: 'https://github.com/IzzyBrassell/iCarly-project-1', 
+    },
+     {
+        title: `Fortress Defense`,
+        imageUrl: Gamemap,
+        resources: 'HMTL, JS, CSS, Node, Express, Sequelize',
+        description: 'A Tower Defense Video Game that will soon have the feature to save High Scores and view a Leaderboard',
+        githubURI: 'https://github.com/IzzyBrassell/Fortress-Defense', 
+    },
+     {
+        title: `Employee Blog`,
+        imageUrl: EmployeeBlog,
+        resources: 'JS, Express, Handlebars, Sequelize',
+        description: 'An Employee only blogsite to look at posts and make posts with other employees',
+        githubURI: 'https://github.com/IzzyBrassell/Employee-blog', 
+    },
+     {
+        title: `Employee CMS`,
+        imageUrl: CMS,
+        resources: 'Node, Express, MySQL',
+        description: '',
+        githubURI: 'https://github.com/IzzyBrassell/CMS', 
+    },
+     {
+        title: `This Portfolio`,
+        imageUrl: '',
+        resources: 'React, Node',
+        description: '',
+        githubURI: 'https://github.com/IzzyBrassell/react-portfolio', 
+    }
+]
+
+function App() {
   return (
     <Router>
-      <Layout />
+      <Header /> 
+       
+        <Routes>
+        <Route><AboutMe /></Route>
+        <Route path="/Aboutme"><AboutMe /></Route>
+        <Route path="/Contact"><Contact /></Route>
+        <Route path="/Projects"><Projects projects={projects} /></Route>
+        <Route path='/Resume'><Resume /></Route>
+      </Routes>
     </Router>
   );
 }
