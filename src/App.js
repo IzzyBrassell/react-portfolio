@@ -11,7 +11,7 @@ import StreamersDen from './assets/images/StreamersDen.png';
 import Gamemap from './assets/images/Gamemap.png';
 import EmployeeBlog from './assets/images/EMPblog.png'
 import Portfolio from './assets/images/Portfolio.png'
-
+import CodeMonsters from './assets/images/Codemonsters.png'
 
 
 const projects = [
@@ -49,6 +49,14 @@ const projects = [
         resources: 'React, Node',
         description: 'Portfolio made only using React, React-Router, and React-bootstrap',
         githubURI: 'https://github.com/IzzyBrassell/react-portfolio', 
+    },
+    {
+      title: 'Code Monsters',
+      imageUrl: CodeMonsters,
+      resources: 'Full MERN Stack Application using Mongo, Express, React and Node to run the site alongside using React-Bootstrap to design the site',
+      description: 'Text Adventure site with authentication, a Save/Load functionality and Character Creation',
+      githubURI: 'https://github.com/IzzyBrassell/code-monsters'
+
     }
 ]
 
